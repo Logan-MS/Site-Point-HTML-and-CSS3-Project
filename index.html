@@ -10,7 +10,7 @@
    </head> 
    <body class="hyphenate">
     <header>
-        <h1><span>The</span><a href="index.html">HTML5 <img src="images\logo.png"/> Herald</a></h1>
+        <h1><span>The </span><a href="index.html">HTML5 <img src="images\logo.png"/> Herald</a></h1>
         <h2>HTML5 Herald
             <span class="tagline">Produced With That Good Ol' timey HTML5
                 &amp; CSS3</span>
@@ -27,8 +27,38 @@
     </header>
     <main role="main">
         <div class="primary">
-            <article id="ac1"></article>
+            <article id="ac1">
+                <div class="vc">
+                    <video width="373" height="280" preload="" id="video" poster="images/ford-plane-still.png">
+                        <source src="media/ford-plane-takes-off.mp4" type="video/mp4"/>
+                        <source src="media/media_ford-plane-takes-off.ogv" type="video/ogg"/>
+                    </video>
+                    <canvas id="canvasOverlay" width="373"  height="280"></canvas>
+                    <div class="control">
+                        <div id="playPause" class="pp paused" tabindex="1" title="Play">Play/Pause</div>
+                        <div id="timer">00:00</div>
+                        <div id="muteunmute" class="mu unmuted" tabindex="2">Mute/Unmute</div>                        
+                    </div>
+                </div>
+                <h1>Video is the final frontier, and now we have conquered it!</h1>
+                <div class="content">
+                    <p>Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla.</p>
+                    <p>In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh. Aliquam erat volutpat. Mauris vel neque sit amet nunc gravida congue sed sit amet purus.</p>
+                    <p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>           
+                </div>
+            </article>
+            <article>
+                <h1>Great Things Are Possible with CSS Columns! Pip Pip Pip!</h1>
+                <div class="content">
+                    <p>Maecenas quis tortor arcu. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit.</p>
+                    <p>Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>
+                    <p>Neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel velit. Morbi ac commodo nulla. In condimentum orci id nisl volutpat bibendum. Quisque commodo hendrerit lorem quis egestas. Vivamus rutrum nunc non neque consectetur quis placerat neque lobortis. Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit, eu euismod magna sapien ut nibh.</p>                    
+                </div>
+            </article>
         </div>
+
         <div class="secondary">
             <article></article>
         </div>
