@@ -140,7 +140,45 @@ main {
 }
 
 main > div {
-  float: left;  
+  float: left;   
+}
+
+main > div:first-of-type,
+main > div .primary {
+    width: 50%;
+    padding-right: 4px;
+    box-sizing: border-box;
+}
+
+main > div:nth-last-of-type(2),
+main > div .secondary {
+    width: 17%;
+}
+
+main > div:last-of-type,
+main > div.tertiary {
+    width: 33%;
+    margin-right: 0;
+    padding-left: 4px;
+    box-sizing: border-box;
+}
+
+main > div:first-of-type h1 {
+    font-size: 33px;
+    padding: 0 0 4px 0;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+main h1 {
+    font-size: 22px;
+    margin: 10px 0 8px 0;
+}
+
+main hgroup {
+    padding: 0 0 10px 0;
+    margin: 0 0 5px 0;
+    background: transparent url(images\bg-subhead.gif);
 }
 
 
