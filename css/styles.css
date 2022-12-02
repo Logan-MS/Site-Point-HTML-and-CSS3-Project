@@ -290,3 +290,272 @@ aside p + a {
     text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.draganddrop .mc {
+    text-align: center;
+}
+
+.no-draganddrop .mc {
+    text-align: center;
+}
+
+a.wanted:hover {
+    box-shadow: 4px 10px #484848;
+    top: -5px;
+    left: -2px;
+    position: relative;
+}
+
+.holding {
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.md {
+    height: 140px;
+    width: 236px;
+}
+
+.spin {
+    position: absolute;
+    top: 8px;
+    left: 55px;
+}
+
+.ad-ad1 a:hover,
+.ad-ad1 a:active {
+    text-decoration: none;
+}
+
+.ad-ad1 h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 36px;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+
+.ad-ad1 h1:first-letter {
+    letter-spacing: -0.1em;
+}
+
+.ad-ad1 p {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
+aside > article:nth-of-type(2),
+.ad-ad2 {
+    background-image: url(../images/dukes.png) ;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    -webkit-transform: 2s linear 250ms;
+    transition: transform 2s linear 250ms;
+    min-height: 140px;
+}
+
+aside > article:nth-of-type(2) h1,
+.ad-ad2 h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 30px 0 75px;
+    line-height: 1;
+    color: #999;
+    margin: 0 0 0 15px;
+    text-align: left;
+}
+
+aside > article:nth-of-type(2) h1 span,
+.ad-ad2 h1 span {
+    font-size: 30px;
+    color: #999;
+    display: inline-block;
+    -webkit-transition: color 0.2s ease-out, -webkit-transform 0.2s ease-out;
+    transition: color 0.2s ease-out, transform 0.2s ease-out;
+}
+
+aside > article:nth-of-type(2) h1:hover span,
+.ad-ad2 h1:hover span {
+    color: #484848;
+    -webkit-transform: rotate(10deg) translateX(40px) scale(1.5);
+}
+
+aside > article:nth-of-type(2) p,
+.ad-ad2 p {
+    padding: 5px 3px 0 75px;
+    font-size: 0.85em;
+}
+
+.ad-ad3 {
+    background-image: url(../images/gradient.svg);
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.4) 0, transparent 37%, transparent 83%, rgba(0, 0, 0, 0.06) 92%, transparent 98%);
+    background-image: linear-gradient(top, rgba(0,0,0,0.4) 0, transparent 37%, transparent 83%, rgba(0, 0, 0, 0.06) 92%, transparent 98%);
+    background-position: 0,0;
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+.ad-ad3 h1 {
+    color: #484848;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;
+    letter-spacing: -1px;
+    margin: 20px 5px 0;
+}
+
+.ad-ad3 h1:after {
+    content: '';
+    width: 90px;
+    height: 92px;
+    background-image: url(../images/bike_sprite.png);
+    display: block;
+    margin: auto;
+    -webkit-animation: bike steps(4,start) infinite 0.4s, move linear infinite 8s;
+    -webkit-animation-play-state: paused;
+    animation: bike steps(4,start) infinite 0.4s, move linear infinite 8s;
+    animation-play-state: paused;
+}
+
+.ad-ad3 h1:hover:after {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.ad-ad3 a {
+    text-decoration: none;
+}
+
+@-webkit-keyframes bike {
+    0%{
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -360px 0;
+    } }
+
+@keyframes bike {
+    0%{
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -360px 0;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        -webkit-transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+    }
+}
+
+@keyframes move {
+    0% {
+        -webkit-transform: translateX(-100px);
+    }
+
+    100% {
+        -webkit-transform: translateX(100px);
+    }
+}
+
+.ad-ad4 {
+    position: relative;
+}
+
+.no-geolocation .ad-ad4 {
+    display: none;
+}
+
+.ad-ad4 h1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+form {
+    border: solid 2px #888;
+    border-width: 2px 0;
+    clear: both;
+    box-shadow: inset 1px 1px 84px rgba(0, 0, 0, 0.24), inset -1px -1px 84px rgba(0,0,0,0.24);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cacaca', endColorstr='b1b1b1');;
+    margin: 1px 0;
+    text-align: center;
+    padding: 20px;
+    min-height: 300px;
+    background: rgba(0,0,0, 0.2) url(../images/bg-form.png) no-repeat bottom center;
+}
+
+form ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+form li {
+    margin-bottom: 40px;
+}
+
+form p {
+    text-align: center;
+}
+
+form h1 {
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    white-space: nowrap;
+    background: url(../images/bg-formtitle-left.png) left 13px no-repeat, url(../images/bg-formtitle-right.png) right 13px no-repeat;   
+}
+
+form h1 + p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.geoForm {
+    padding: 0;
+    border: none;
+    min-height: 0;
+    background: none;
+    filter: none;
+    -ms-filter: none;
+    box-shadow: none;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+input [type="text"],
+input [type="email"],
+input [type="password"],
+input [type="url"],
+textarea {
+    background: transparent no-repeat top right;
+    border: 0 dotted #484848;
+    border-bottom-width: 1px;
+    display: block;
+    margin: 10px auto 10px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px 30px;
+    width: 50%;
+}
+
+
