@@ -558,4 +558,56 @@ textarea {
     width: 50%;
 }
 
+input [type="text"]:required,
+input [type="email"]:required,
+input [type="password"]:required,
+input [type="url"]:required,
+textarea:required {
+    background-image: url(../images/required.png);
+}
+
+input [type="text"]:focus:invalid,
+input [type="email"]:focus:invalid,
+input [type="password"]:focus:invalid,
+input [type="url"]:focus:invalid,
+textarea:focus:invalid {
+    background-image: url(../images/invalid.png);
+}
+
+input [type="text"]:focus:valid,
+input [type="email"]:focus:valid,
+input [type="password"]:focus:valid,
+input [type="url"]:focus:valid,
+textarea:focus:valid {
+   background-image: url(../images/valid.png); 
+}
+
+.zipcode {
+    width: 25%;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+input[type=number] {
+    width: 3em;
+}
+
+:invalid {
+    box-shadow: none;
+}
+
+::-webkit-input-placeholder {
+    color: 333;
+}
+
+input { 
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
 
