@@ -605,9 +605,273 @@ input {
     text-align: center;
 }
 
+input[type=submit],
+input[type=button] {
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    background-image: url(../images/button-gradient.svg);
+    background-image:  radial-gradient(30% 120%, circle, #909090 0%, #484848 50%);
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    padding: 10px 30px;
+    margin: 10px auto;
+    opacity: 0.8;
+    -webkit-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+}
 
+input[type=submit]:hover {
+    opacity: 1;
+    -webkit-transition: opacity .25s linear;
+    transition: opacity .25s linear;
+}
 
+#video-container {
+    width: 373px;
+    margin: 0 auto;
+    position: relative;
+}
 
+video {
+    display: block;
+    margin-bottom: 12px;
+}
 
+video,
+.content h1 {
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    clear: both;
+}
+
+.cnvs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    margin-bottom: 25px;
+}
+
+.myCanvas {
+    border: 2px dotted black;
+    margin: 0 20px;
+}
+
+.vc {
+    width: 373px;
+    margin: 0 auto;
+    position: relative;    
+}
+
+.ctrl {
+    position: absolute;
+    bottom: 0px;
+    opacity: .5;
+    -webkit-transition: opacity .7s linear;
+}
+
+.ctrl:hover {
+ opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.pp,
+.mu {
+    width: 25px;
+    height: 25px;
+    float: left;
+    text-indent: -9999em;
+    border-right: solid 1px #555;
+}
+
+.pp:hover,
+.mu:hover {
+    cursor: pointer;
+}
+
+.paused {
+    background: #ccc url(../images/controls-sprite.png) no-repeat 0 --75px;
+}
+
+.playing {
+    background-position: 0 -50px;
+}
+
+.timer {
+    width: 321px;
+    height: 25px;
+    background: #ccc;
+    float: left;
+    text-align: center;
+    line-height: 25px;
+    overflow: hidden;
+}
+
+.mu {
+    overflow: hidden;
+    border-right: none;
+    border-left: solid 1px #555;
+}
+
+.unmuted {
+    background: #ccc url(../images/controls-sprite.png) no repeat 0 --25px;
+}
+
+#canvasOverlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #000;
+    margin-bottom: 25px;
+}
+
+body > footer {
+    clear: both;
+}
+body > footer small {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    line-height: 32px;
+    padding: 0 0 0 7px;
+    letter-spacing: .08em;
+    text-shadow: rgba(0,0,0, 0.4) 1px 1px 4px;
+    float: left;
+}
+
+body > footer p:last-of-type {
+    float: right;
+    padding: 5px 0 0 0;
+}
+body > footer section {
+    float: left;
+}
+
+body > footer h1 {
+    font-size: 2rem;
+}
+
+.footerinfo {
+    clear: both;
+    height: 30px;
+    width: 100%;
+    background: transparent;
+}
+
+#authors {
+padding-top: 10px;
+padding-right: 20px;
+background-color: #d1d1d1;
+border: solid 1px #888;
+border-width: 1px 0;
+overflow: hidden;
+display: flex;
+}
+
+#authors h1 {
+    margin: 0;
+}
+
+#authors section {
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
+}
+
+#authors section:nth-of-type(2) {
+    order: 2;
+}
+
+@media print {
+    *{
+        background: transparent !important;
+        color: #484848 !important;
+        text-shadow: none;
+    }
+
+    a, a:visited {
+        color: #484848 !important;
+        text-decoration: underline;
+    }
+
+    a:after {
+        content: "("attr(href)")";
+    }
+
+    abbr:after {
+        content: "("attr(title)")";
+    }
+
+    .ir a:after {
+        content: "";
+    }
+
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    img {
+        page-break-inside: avoid;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+    
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2, h3 {
+        page-break-after: avoid;
+    }}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+        min-width: 320px;
+    }
+    
+    body > header h1 {
+        font-size: 7vw;        
+    }
+
+    body main > div:nth-of-type(n),
+    aside,
+    aside article {
+        width: 100%;
+        padding: 0 1em;
+        box-sizing: border-box;
+    }
+
+    article h2, #mouseContainer {
+        text-align: left;
+        background-position: left top;
+    }
+
+    .content {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+
+    article:not([id="ac1"]) {
+        border-top: 1px solid;
+        margin-top: 1em;
+        padding-top: 1em;
+    }
+
+    #authors {
+        flex-direction: column;
+    }
+    
+}
 
 
