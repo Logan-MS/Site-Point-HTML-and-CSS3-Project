@@ -40,5 +40,15 @@ function saveData() {
             localStorage.setItem("email", email);
             localStorage.setItem("remember",true);
         }
+        else {
+            localStorage.clear();
+        }
+    }
+    else {
+        alert("No native support for Web storage.")
     }
 }
+
+loadStoredDetails();
+var rememberMe = document.getElementById("rememberme");
+addEvent('change', rememberMe, saveData);
