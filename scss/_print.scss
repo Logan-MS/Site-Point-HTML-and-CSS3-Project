@@ -1,0 +1,20 @@
+@media print {
+    * {
+        background: transparent !important;
+        color: #484848 !important;
+        text-shadow: none;
+    }
+
+    a, a:visited {
+        color: #484848 !important;
+        text-decoration: underline;
+    }
+
+    a:after {
+        content: "("attr(href)")";
+    }
+
+    abbr:after {
+        content: " (" attr(href) ")" ;
+    }
+}
